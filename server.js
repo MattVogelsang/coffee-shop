@@ -12,8 +12,22 @@ app.engine('mustache', mustacheExpress());
 
 // Routes
 app.get("/", (req, res) => {
-    res.render("index")
+     res.render("index")
+
 })
+const user = { 
+    username: "matt",
+    bio: "jhihiih",
+    age: "26"
+
+}
+
+
+const userislogged =true
+if (userislogged)  { 
+console.log(user)
+}
+
 
 // Port listener and hot reloading
 app.listen(3000)
